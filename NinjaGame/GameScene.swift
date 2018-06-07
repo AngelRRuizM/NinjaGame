@@ -237,6 +237,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             lives -= 1
             liveImages[lives].texture = SKTexture(imageNamed: "zhead")
         }
+        else{
+        }
         
     }
     
