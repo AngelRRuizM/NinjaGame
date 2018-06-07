@@ -145,6 +145,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             liveImages[lives].texture = SKTexture(imageNamed: "zhead")
         }
         else{
+            gameOver()
         }
     }
     
@@ -247,6 +248,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             liveImages[lives].texture = SKTexture(imageNamed: "zhead")
         }
         else{
+            gameOver()
         }
         
     }
