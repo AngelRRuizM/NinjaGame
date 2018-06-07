@@ -134,10 +134,19 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let duration = 10.0 //random(min: CGFloat(2.0), max: CGFloat(4.0))
         let move = SKAction.move(to: CGPoint(x: -monster.size.width / 2, y: y), duration: TimeInterval(duration))
         let moveDone = SKAction.removeFromParent()
-        monster.run(SKAction.sequence([move, moveDone]))
+        let action = SKAction.perform(#selector(monsterPassedNinja), onTarget: self)
+        monster.run(SKAction.sequence([move, moveDone, action]))
     }
     
-    
+    @objc func monsterPassedNinja(){
+        if lives  > 0 {
+            //CHANGE LIVE COUNTER AND IMAGE
+            lives -= 1
+            liveImages[lives].texture = SKTexture(imageNamed: "zhead")
+        }
+        else{
+        }
+    }
     
     func touchDown(atPoint pos : CGPoint) {
         
