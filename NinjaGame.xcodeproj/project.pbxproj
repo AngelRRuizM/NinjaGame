@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FB8FA60920C84B8F00AC924E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8FA60820C84B8F00AC924E /* AppDelegate.swift */; };
-		FB8FA60B20C84B8F00AC924E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB8FA60A20C84B8F00AC924E /* GameScene.sks */; };
 		FB8FA60D20C84B8F00AC924E /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB8FA60C20C84B8F00AC924E /* Actions.sks */; };
 		FB8FA60F20C84B8F00AC924E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8FA60E20C84B8F00AC924E /* GameScene.swift */; };
 		FB8FA61120C84B8F00AC924E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8FA61020C84B8F00AC924E /* GameViewController.swift */; };
@@ -39,7 +38,6 @@
 /* Begin PBXFileReference section */
 		FB8FA60520C84B8F00AC924E /* NinjaGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NinjaGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB8FA60820C84B8F00AC924E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FB8FA60A20C84B8F00AC924E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		FB8FA60C20C84B8F00AC924E /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		FB8FA60E20C84B8F00AC924E /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		FB8FA61020C84B8F00AC924E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				FB8FA60820C84B8F00AC924E /* AppDelegate.swift */,
-				FB8FA60A20C84B8F00AC924E /* GameScene.sks */,
 				FB8FA60C20C84B8F00AC924E /* Actions.sks */,
 				FB8FA60E20C84B8F00AC924E /* GameScene.swift */,
 				FB8FA61020C84B8F00AC924E /* GameViewController.swift */,
@@ -239,7 +236,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB8FA61420C84B8F00AC924E /* Main.storyboard in Resources */,
-				FB8FA60B20C84B8F00AC924E /* GameScene.sks in Resources */,
 				FB8FA61620C84B9000AC924E /* Assets.xcassets in Resources */,
 				FB8FA61920C84B9000AC924E /* LaunchScreen.storyboard in Resources */,
 				FB8FA60D20C84B8F00AC924E /* Actions.sks in Resources */,
@@ -445,6 +441,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S43QRZH5C6;
 				INFOPLIST_FILE = NinjaGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,6 +460,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S43QRZH5C6;
 				INFOPLIST_FILE = NinjaGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
