@@ -265,4 +265,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             projectileDidCollideWithMonster(projectile: contact.bodyB.node as! SKSpriteNode, monster: contact.bodyA.node as! SKSpriteNode)
         }
     }
+    
+    func gameOver() {
+        let alert = UIAlertController(title: "GAME OVER", message: "Do you want to play again", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (_) -> Void in
+            let gameScene:GameScene = GameScene(size: self.view!.bounds.size)
+            let transition = SKTransition.fade(withDuration: 1.0)
+            gameScene.scaleMode = SKSceneScaleMode.fill
+            self.view!.presentScene(gameScene, transition: transition)
+            
+        }))
+        self.view?.window?.rootViewController?.present(alert, animated: true, completion: nil)
+    }
 }
